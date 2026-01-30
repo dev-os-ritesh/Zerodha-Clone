@@ -201,20 +201,34 @@ app.get("/allPositions", async (req, res) => {
 });
 
 app.post("/newOrder", async (req, res) => {
-  let newOrder = new OrdersModel({
-    name: req.body.name,
-    qty: req.body.qty,
-    price: req.body.price,
-    mode: req.body.mode,
-  });
+  try {
+    console.log("REQ BODY:", req.body);
 
-  newOrder.save();
+    if (!req.body || Object.keys(req.body).length === 0) {
+      return res.status(400).json({ error: "Body missing or empty" });
+    }
 
-  res.send("Order saved!");
+    const newOrder = new OrdersModel(req.body);
+    await newOrder.save();
+
+    res.status(201).json({ message: "Order saved!" });
+  } catch (error) {
+    console.error("ERROR:", error.message);
+    res.status(500).json({ error: error.message });
+  }
 });
+
 
 app.listen(PORT, () => {
     console.log("App started !");
     mongoose.connect(uri);
     console.log("DB connected");
 });
+
+// mongoose.connect(uri)
+//   .then(() => console.log("DB connected"))
+//   .catch(err => console.log(err));
+
+// app.listen(PORT, () => {
+//   console.log(`App started on port ${PORT}`);
+// });
