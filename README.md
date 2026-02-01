@@ -34,3 +34,7 @@ landing page:
 dashboard page:
 <img width="957" height="472" alt="image" src="https://github.com/user-attachments/assets/4889b522-c9d6-41c2-9619-88f4f1c6ff0a" />
 
+Signup page:
+
+loginpage:
+
