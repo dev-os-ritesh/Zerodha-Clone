@@ -38,4 +38,5 @@ Signup page:
 ![image alt](https://github.com/dev-os-ritesh/Investo/blob/b1f307ecb8ad853258f1ea5d039acb2ae700a120/Screenshot%202026-02-01%20155638.png)
 
 loginpage:
+![image alt](https://github.com/dev-os-ritesh/Investo/blob/6b43429a3774c7f8162d0035df7b8ea9cf5c0488/Screenshot%202026-02-01%20160508.png)
 
