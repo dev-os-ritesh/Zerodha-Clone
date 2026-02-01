@@ -27,16 +27,9 @@ The project focuses on **real-world project structure, API integration, and prod
 
 ---
 
-## ▶️ Run Locally
-
-```bash
-npm run install:all
-npm run build
-npm start
-
 ## Screenshots
 landing page:
-<img width="820" height="434" alt="image" src="https://github.com/user-attachments/assets/195caec4-a15b-4a34-b8c3-82ef89afa384" />
+![image alt] (https://github.com/dev-os-ritesh/Investo/blob/a786bdc9a6fcf969400ecf7837bed5054ab8dc59/Screenshot%202026-02-01%20154553.png)
 
 dashboard page:
 <img width="957" height="472" alt="image" src="https://github.com/user-attachments/assets/4889b522-c9d6-41c2-9619-88f4f1c6ff0a" />
